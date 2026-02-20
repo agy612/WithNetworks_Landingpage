@@ -247,7 +247,7 @@ export default function LandingPage() {
                 <div className="w-full md:w-[45%] lg:w-[42%] xl:w-[40%] shrink-0">
                     <FadeIn direction="left" delay={0.2}>
                          <div className="relative aspect-[4/3] w-full">
-                            <div className="absolute inset-0 bg-gradient-to-bl from-teal-50 to-blue-50 rounded-3xl rotate-2"></div>
+                            <div className="absolute inset-0 bg-gradient-to-bl from-blue-50 to-blue-50 rounded-3xl rotate-2"></div>
                             <div className="absolute inset-4 bg-white rounded-2xl shadow-xl flex items-center justify-center overflow-hidden border border-gray-100">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand/5 via-transparent to-transparent animate-pulse"></div>
                                 <div className="relative z-10 grid grid-cols-2 gap-4 p-8">
@@ -539,7 +539,7 @@ export default function LandingPage() {
                     }
                 ].map((item, i) => (
                     <FadeIn key={i} delay={i*0.1}>
-                        <div className="group cursor-pointer bg-[#F0FDFB] border-2 border-brand/20 rounded-2xl p-8 text-left transition-all duration-300 hover:bg-brand hover:border-brand hover:shadow-xl hover:shadow-brand/20 hover:-translate-y-1">
+                        <div className="group cursor-pointer bg-[#EEF4FB] border-2 border-brand/20 rounded-2xl p-8 text-left transition-all duration-300 hover:bg-brand hover:border-brand hover:shadow-xl hover:shadow-brand/20 hover:-translate-y-1">
                             <div className="flex items-center justify-between mb-6">
                                 <div className="w-14 h-14 rounded-xl bg-brand/10 flex items-center justify-center text-brand group-hover:bg-white group-hover:text-brand transition-all duration-300">
                                     {item.icon}
@@ -705,8 +705,8 @@ export default function LandingPage() {
                      "입지\n분석", "자금\n계획", "브랜딩\n진료 컨셉", "마케팅\n전략", "인재 채용\n교육", "운영\n안정화"
                  ].map((title, i) => (
                      <FadeIn key={i} delay={i * 0.1}>
-                         <div className="w-full aspect-square max-w-[200px] mx-auto rounded-full border border-teal-500 flex flex-col items-center justify-center p-4 hover:bg-brand/5 transition-colors duration-300 relative group">
-                             <div className="text-teal-500 font-bold text-sm mb-3">0{i + 1}</div>
+                         <div className="w-full aspect-square max-w-[200px] mx-auto rounded-full border border-brand flex flex-col items-center justify-center p-4 hover:bg-brand/5 transition-colors duration-300 relative group">
+                             <div className="text-brand font-bold text-sm mb-3">0{i + 1}</div>
                              <div className="font-bold text-lg text-gray-800 text-center whitespace-pre-line leading-tight">{title}</div>
                          </div>
                      </FadeIn>
@@ -734,32 +734,32 @@ export default function LandingPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                   {/* Recruitment Card */}
                   <FadeIn delay={0.2}>
-                      <div className="bg-[#F8FBFD] border border-gray-100 rounded-3xl p-12 h-full relative overflow-hidden group">
-                          <h3 className="text-3xl font-bold text-teal-500 mb-10">01. 채용지원</h3>
+                      <div className="bg-[#EFF4FB] border border-gray-100 rounded-3xl p-12 h-full relative overflow-hidden group">
+                          <h3 className="text-3xl font-bold text-brand mb-10">01. 채용지원</h3>
                           <ul className="space-y-6 text-gray-700 relative z-10">
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">채용공고 제작 및 주요 채용 플랫폼 업로드</span></li>
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">이력서 관리 및 면접 일정 조율</span></li>
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">면접 진행 어시스트 및 결과 공유</span></li>
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">근로계약서 작성 지원</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">채용공고 제작 및 주요 채용 플랫폼 업로드</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">이력서 관리 및 면접 일정 조율</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">면접 진행 어시스트 및 결과 공유</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">근로계약서 작성 지원</span></li>
                           </ul>
                           <div className="absolute bottom-0 right-0 w-48 h-48 opacity-20 transform translate-x-10 translate-y-10">
-                              <PenTool className="w-full h-full text-teal-600" />
+                              <PenTool className="w-full h-full text-brand" />
                           </div>
                       </div>
                   </FadeIn>
 
                   {/* Education Card */}
                   <FadeIn delay={0.4}>
-                      <div className="bg-[#F8FBFD] border border-gray-100 rounded-3xl p-12 h-full relative overflow-hidden group">
-                          <h3 className="text-3xl font-bold text-teal-500 mb-10">02. 교육지원</h3>
+                      <div className="bg-[#EFF4FB] border border-gray-100 rounded-3xl p-12 h-full relative overflow-hidden group">
+                          <h3 className="text-3xl font-bold text-brand mb-10">02. 교육지원</h3>
                           <ul className="space-y-6 text-gray-700 relative z-10">
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">신규 직원 및 관리자 대상 코칭 프로그램</span></li>
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">환자 응대 및 커뮤니케이션 중심 CS교육</span></li>
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">병원 내 서비스 매뉴얼 구축 및 실무 피드백</span></li>
-                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-teal-400 shrink-0 mt-1" /> <span className="text-lg">지속적인 직원 만족도 및 서비스 품질 관리</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">신규 직원 및 관리자 대상 코칭 프로그램</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">환자 응대 및 커뮤니케이션 중심 CS교육</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">병원 내 서비스 매뉴얼 구축 및 실무 피드백</span></li>
+                              <li className="flex items-start gap-3"><Check className="w-5 h-5 text-brand shrink-0 mt-1" /> <span className="text-lg">지속적인 직원 만족도 및 서비스 품질 관리</span></li>
                           </ul>
                           <div className="absolute bottom-0 right-0 w-48 h-48 opacity-20 transform translate-x-4 translate-y-4">
-                              <Users className="w-full h-full text-teal-600" />
+                              <Users className="w-full h-full text-brand" />
                           </div>
                       </div>
                   </FadeIn>
