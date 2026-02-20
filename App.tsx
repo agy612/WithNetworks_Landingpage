@@ -41,9 +41,7 @@ export default function LandingPage() {
           {/* Logo */}
           <a href="#" onClick={scrollToTop} className="flex items-center gap-2 z-50">
              <div className={`font-bold text-2xl xl:text-3xl flex items-center gap-2 ${isScrolled ? 'text-brand-text' : 'text-white'}`}>
-                <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${isScrolled ? 'bg-brand' : 'bg-white'}`}>
-                    <span className={`text-xl font-bold ${isScrolled ? 'text-white' : 'text-brand'}`}>W</span>
-                </div>
+                <img src="/source/logo.png" alt="위드네트웍스 로고" className="h-16 xl:h-20 w-auto" />
                 위드네트웍스
              </div>
           </a>
@@ -107,7 +105,7 @@ export default function LandingPage() {
         {/* Background Image */}
         <div className="absolute inset-0 bg-slate-900">
             <img 
-              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2653&auto=format&fit=crop" 
+              src="/source/1_인트로 백그라운드.jpg"
               alt="Background" 
               className="w-full h-full object-cover opacity-50" 
             />
@@ -286,14 +284,12 @@ export default function LandingPage() {
                                 단발성 컨설팅이 아닌<br />
                                 현장 중심의 지속 가능한 운영 지원이 위드네트웍스의 방식입니다.
                             </p>
-                            <p>
-                                진료·원무·청구 흐름 점검 및 개선<br />
-                                인력 운영 및 조직 관리 컨설팅
-                            </p>
-                            <p>
-                                매출 구조 분석 및 수익성 개선<br />
-                                병원 맞춤 운영·관리 가이드 제공
-                            </p>
+                            <div className="space-y-1">
+                                <p className="flex items-center gap-2"><Check className="w-5 h-5 text-brand shrink-0" />진료·원무·청구 흐름 점검 및 개선</p>
+                                <p className="flex items-center gap-2"><Check className="w-5 h-5 text-brand shrink-0" />인력 운영 및 조직 관리 컨설팅</p>
+                                <p className="flex items-center gap-2"><Check className="w-5 h-5 text-brand shrink-0" />매출 구조 분석 및 수익성 개선</p>
+                                <p className="flex items-center gap-2"><Check className="w-5 h-5 text-brand shrink-0" />병원 맞춤 운영·관리 가이드 제공</p>
+                            </div>
                         </div>
                     </FadeIn>
                 </div>
@@ -334,8 +330,8 @@ export default function LandingPage() {
                     <FadeIn direction="right" delay={0.2}>
                          <div className="relative aspect-[4/3] w-full">
                             <img
-                              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2574&auto=format&fit=crop"
-                              alt="Network Collaboration"
+                              src="/source/2_cs컨설팅구축.jpg"
+                              alt="CS 컨설팅 구축"
                               className="w-full h-full object-cover rounded-3xl shadow-2xl"
                             />
                             <div className="absolute inset-0 bg-gradient-to-tr from-brand/20 to-transparent rounded-3xl"></div>
@@ -368,7 +364,7 @@ export default function LandingPage() {
       </section>
 
       {/* ================= OPENING CONSULTING: INTRO ================= */}
-      <section id="opening-consulting" className="py-24 xl:py-36 bg-[#F0FDFB] scroll-mt-20">
+      <section id="opening-consulting" className="py-24 xl:py-36 bg-[#EEF4FB] scroll-mt-20">
          <div className="max-w-[1280px] mx-auto px-5 xl:px-20 text-center">
             <FadeIn>
                 <h2 className="text-3xl md:text-4xl xl:text-[48px] font-bold text-gray-900 mb-8" style={{ lineHeight: '1.4' }}>
@@ -390,8 +386,8 @@ export default function LandingPage() {
       <section className="relative py-32 xl:py-48 bg-slate-900 overflow-hidden">
         <div className="absolute inset-0">
              <img 
-               src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" 
-               alt="Consulting Meeting" 
+               src="/source/3_위드개원업무.jpg"
+               alt="위드 개원업무" 
                className="w-full h-full object-cover opacity-30" 
              />
              <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
@@ -461,25 +457,25 @@ export default function LandingPage() {
                   num: "03",
                   title: "브랜딩 & 진료 컨셉",
                   desc: "차별화된 브랜드 이미지 구축",
-                  img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop"
+                  img: "/source/4_개원프로세스/3_브랜딩&진료컨셉.jpg"
                },
                {
                   num: "04",
                   title: "마케팅 전략 수립",
                   desc: "온라인·오프라인 통합 마케팅 전략",
-                  img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+                  img: "/source/4_개원프로세스/4_마케팅전략수립.jpg"
                },
                {
                   num: "05",
                   title: "인재 채용 & 교육",
                   desc: "우수 인재 선별 및 교육 시스템 제공",
-                  img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop"
+                  img: "/source/4_개원프로세스/5_인재채용&교육.jpg"
                },
                {
                   num: "06",
                   title: "운영 안정화",
                   desc: "지속 가능한 운영 구조 완성",
-                  img: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2669&auto=format&fit=crop"
+                  img: "/source/4_개원프로세스/6_운영안정화.jpg"
                }
             ].map((step, i) => (
                <FadeIn key={i} delay={i * 0.1}>
@@ -509,8 +505,8 @@ export default function LandingPage() {
       <section id="operation-consulting" className="py-24 xl:py-36 bg-white scroll-mt-20">
          <div className="max-w-[1440px] mx-auto px-5 xl:px-20 text-center">
              <FadeIn>
-                 <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-20">운영컨설팅</h2>
-                 <p className="text-gray-600 text-xl mb-16 max-w-3xl mx-auto" style={{ lineHeight: '1.8' }}>
+                 <h2 className="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">운영컨설팅</h2>
+                 <p className="text-gray-600 text-xl mb-12 max-w-3xl mx-auto" style={{ lineHeight: '1.8' }}>
                     개원 이후, 병원이 안정적으로 성장하도록 지원합니다.
                  </p>
              </FadeIn>
@@ -564,7 +560,7 @@ export default function LandingPage() {
       {/* ================= MANAGEMENT: OPERATION HERO ================= */}
       <section className="relative h-[400px] flex items-center justify-center bg-black overflow-hidden">
           <div className="absolute inset-0">
-             <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2672&auto=format&fit=crop" className="w-full h-full object-cover opacity-50" alt="Operation" />
+             <img src="/source/5_운영컨설팅 백그라운드.jpg" className="w-full h-full object-cover opacity-50" alt="운영컨설팅" />
              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
           </div>
           <div className="relative z-10 text-center text-white">
@@ -626,10 +622,10 @@ export default function LandingPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                  {[
-                    { num: "150+", label: "누적 컨설팅", img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop" },
-                    { num: "95%", label: "고객 만족도", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2670&auto=format&fit=crop" },
-                    { num: "85%", label: "재계약률", img: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=2670&auto=format&fit=crop" },
-                    { num: "24H", label: "상담 지원", img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop" }
+                    { num: "150+", label: "누적 컨설팅", img: "/source/6_위드네트웍스 실적/1_누적컨설팅.jpg" },
+                    { num: "95%", label: "고객 만족도", img: "/source/6_위드네트웍스 실적/2_고객만족도.jpg" },
+                    { num: "85%", label: "재계약률", img: "/source/6_위드네트웍스 실적/3_재계약률.jpg" },
+                    { num: "24H", label: "상담 지원", img: "/source/6_위드네트웍스 실적/4_상담지원.jpg" }
                  ].map((item, i) => (
                     <FadeIn key={i} delay={i * 0.1}>
                        <div className="relative h-[300px] rounded-2xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-500">
@@ -664,14 +660,14 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
                     { icon: <Users className="w-12 h-12" />, title: "전문의 직접 참여", desc: "개원 경험을 가진 현직 의사가 직접 참여하여 실전 노하우 제공" },
-                    { icon: <BarChart className="w-12 h-12" />, title: "데이터 기반 분석", desc: "진료·매출 구조 분석을 통한 맞춤형 솔루션 제공" },
+                    { icon: <BarChart className="w-12 h-12" />, title: "데이터 기반 분석", desc: "진료·매출 구조 분석을 통한\n맞춤형 솔루션 제공" },
                     { icon: <Building className="w-12 h-12" />, title: "네트워크 시스템", desc: "CS 컨설팅를 통한 공동 마케팅 및 노하우 공유" },
                 ].map((item, i) => (
                     <FadeIn key={i} delay={i * 0.1}>
                         <div className="bg-[#F5F5F5] p-12 rounded-lg flex flex-col items-center justify-center min-h-[360px] hover:bg-gray-100 transition-colors">
                             <div className="mb-8 text-black">{item.icon}</div>
                             <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                            <p className="text-gray-500 leading-relaxed max-w-[250px] text-sm" style={{ lineHeight: '1.8' }}>{item.desc}</p>
+                            <p className="text-gray-500 leading-relaxed max-w-[250px] text-sm whitespace-pre-line" style={{ lineHeight: '1.8' }}>{item.desc}</p>
                         </div>
                     </FadeIn>
                 ))}
@@ -682,7 +678,7 @@ export default function LandingPage() {
       {/* ================= HR CONSULTING BANNER ================= */}
       <section className="relative h-[400px] flex items-center justify-center bg-gray-900 overflow-hidden">
          <div className="absolute inset-0">
-             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop" className="w-full h-full object-cover opacity-40" alt="HR Consulting" />
+             <img src="/source/7_인재채용&교육.jpg" className="w-full h-full object-cover opacity-40" alt="인재 채용 & 교육" />
              <div className="absolute inset-0 bg-black/40"></div>
          </div>
          <div className="relative z-10 text-center text-white">
@@ -723,7 +719,7 @@ export default function LandingPage() {
       <section className="relative py-24 xl:py-36 bg-white overflow-hidden">
           {/* Banner Image Area */}
           <div className="w-full h-[300px] xl:h-[400px] relative overflow-hidden mb-20">
-             <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop" className="w-full h-full object-cover brightness-50" alt="Meeting" />
+             <img src="/source/8_인재채용&교육.jpg" className="w-full h-full object-cover brightness-50" alt="인재 채용 & 교육" />
              <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-5">
                  <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ lineHeight: '1.4' }}>인재 채용 & 교육</h2>
                  <p className="text-gray-200 text-lg max-w-4xl" style={{ lineHeight: '1.9' }}>
@@ -961,7 +957,7 @@ export default function LandingPage() {
                <FadeIn delay={0.1}>
                   <div className="group relative h-[400px] overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500">
                      <img
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2574&auto=format&fit=crop"
+                        src="/source/9_마케팅 서비스/2_오프라인마케팅.jpg"
                         alt="오프라인 마케팅"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                      />
@@ -1018,7 +1014,7 @@ export default function LandingPage() {
                <FadeIn delay={0.3}>
                   <div className="group relative h-[450px] overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500">
                      <img
-                        src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2671&auto=format&fit=crop"
+                        src="/source/9_마케팅 서비스/4_영상 편집.jpg"
                         alt="영상편집"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                      />
@@ -1041,7 +1037,7 @@ export default function LandingPage() {
                <FadeIn delay={0.4}>
                   <div className="group relative h-[450px] overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500">
                      <img
-                        src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2670&auto=format&fit=crop"
+                        src="/source/9_마케팅 서비스/5_언론 홍보.jpg"
                         alt="언론홍보"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                      />
@@ -1096,7 +1092,7 @@ export default function LandingPage() {
       <div className="fixed bottom-0 left-0 w-full z-50 bg-brand text-white py-4 px-5 flex justify-between items-center xl:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.15)]">
          <div>
             <div className="text-[10px] opacity-80 mb-0.5">평일 공휴일 야간 24시 상담가능</div>
-            <div className="font-bold text-lg">010-0000-0000</div>
+            <div className="font-bold text-lg">010-6419-7861</div>
          </div>
          <a href="tel:010-6419-7861" className="bg-white text-brand px-5 py-2.5 rounded-lg font-bold text-sm shadow-sm flex items-center gap-2">
            <Phone className="w-4 h-4" /> 전화상담
@@ -1112,7 +1108,7 @@ export default function LandingPage() {
              <div className="flex items-center gap-3">
                  <Phone className="w-6 h-6" />
                  <div className="text-3xl font-bold tracking-wide">
-                    010-0000-0000
+                    010-6419-7861
                  </div>
              </div>
          </div>
